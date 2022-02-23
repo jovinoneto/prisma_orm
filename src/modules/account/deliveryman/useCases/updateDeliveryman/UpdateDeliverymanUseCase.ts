@@ -5,7 +5,7 @@ import { inject, injectable } from 'tsyringe';
 import { UpdateError } from '@modules/account/errors/UpdateError';
 import { IDeliverymanRepository } from '@modules/account/repositories/IDeliverymanRepository';
 
-import { VerifyEmpty } from '@shared/container/providers/VerifiProvider/VerifiProvider';
+import { VerifyEmpty } from '@shared/container/providers/VerifiProvider';
 
 import { IUpdateDeliverymantDTO } from './IUpdateDeliverymanDTO';
 

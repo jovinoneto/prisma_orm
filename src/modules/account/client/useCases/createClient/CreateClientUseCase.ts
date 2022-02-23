@@ -5,7 +5,7 @@ import { inject, injectable } from 'tsyringe';
 import { Client } from '@modules/account/infra/prisma/entities/Client';
 import { IClientRepository } from '@modules/account/repositories/IClientRepository';
 
-import { VerifyEmpty } from '@shared/container/providers/VerifiProvider/VerifiProvider';
+import { VerifyEmpty } from '@shared/container/providers/VerifiProvider';
 
 import { CreateClientError } from './CreateClientError';
 import { ICreateClientDTO } from './ICreateClientDTO';

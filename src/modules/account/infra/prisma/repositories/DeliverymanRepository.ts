@@ -13,11 +13,11 @@ export class DeliverymanRepository implements IDeliverymanRepository {
   }
 
   async findAllDeliveriesDeliveryman(
-    idDeliveryman: string,
+    id_deliveryman: string,
   ): Promise<Deliveryman> {
     const deliveries = await this.repository.findMany({
       where: {
-        id: idDeliveryman,
+        id: id_deliveryman,
       },
       select: {
         delivery: true,
@@ -27,10 +27,10 @@ export class DeliverymanRepository implements IDeliverymanRepository {
     return deliveries;
   }
 
-  async findById(idDeliveryman: string): Promise<Deliveryman> {
+  async findById(id_deliveryman: string): Promise<Deliveryman> {
     const deliveryman = await this.repository.findUnique({
       where: {
-        id: idDeliveryman,
+        id: id_deliveryman,
       },
     });
 

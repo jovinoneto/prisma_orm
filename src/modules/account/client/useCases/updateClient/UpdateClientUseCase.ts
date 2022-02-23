@@ -6,7 +6,7 @@ import { UpdateError } from '@modules/account/errors/UpdateError';
 import { Client } from '@modules/account/infra/prisma/entities/Client';
 import { IClientRepository } from '@modules/account/repositories/IClientRepository';
 
-import { VerifyEmpty } from '@shared/container/providers/VerifiProvider/VerifiProvider';
+import { VerifyEmpty } from '@shared/container/providers/VerifiProvider';
 
 import { IUpdateClientDTO } from './IUpdateClientDTO';
 
